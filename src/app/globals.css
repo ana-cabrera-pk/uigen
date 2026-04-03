@@ -121,3 +121,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .scroll-area-stretch > [data-slot="scroll-area-viewport"] > div {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100% !important;
+  }
+}
